@@ -1,24 +1,18 @@
 #include <stdio.h>
-/*
- * main - print a line using puts
- *
- * Return: 0
-*/
+
+/**
+ * main - prints the alphabet in lowercase, and then in uppercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char letter = 97;
-while (letter <= 122)
-{
-putchar(letter);
-letter++;
-}
-putchar('\n');
-letter = 65;
-while (letter <= 90)
-{
-putchar(letter);
-letter++;
-}
-putchar('\n');
-return (0);
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+	putchar('\n');
+	return (0);
 }
