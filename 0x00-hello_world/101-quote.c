@@ -1,13 +1,14 @@
 #include <stdio.h>
-#include <unistd.h>
-/**
- * main - Entry point
- * 
- * Return: Always return 0 (Succes)
- */
+/*
+ * main - entry point
+ *
+ * Return: 1
+*/
 int main(void)
-{
-write(2, "and the piece of art is useful\" - Dora Korpar, 2015-10-19\n",
-sizeof("and the piece of art is useful\" - Dora Korpar, 2015-10-19)),
-return (1);
-}
+{      
+ char message[] = "That piece of art is useful-Dora Korpar,2015-10-19\n";
+
+for (int i = 0; message[i] != '\0'; i++)
+putchar(message[i]);
+
+return 1;
